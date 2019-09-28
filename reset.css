@@ -1,0 +1,43 @@
+/* 字写重置样式表 */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* 图片代替文字 */
+.replace{
+    white-space: nowrap;
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+}
+
+/* 清除浮动，解决高度坍塌 */
+.clearfix::after{
+     content: "";
+     display: block;
+     clear: both;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/* 表单样式重置 */
+input,textarea,button,select{
+    border: none;
+}
+input:focus,
+textarea:focus,
+button:focus,
+select:focus{
+    outline: none;
+    outline-offset: none;
+}
